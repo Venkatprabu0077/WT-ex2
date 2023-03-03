@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONGU.AC.IN</title>
+</head>
+<style>
+.popup {
+  max-width: 90%;
+  max-height: 90%;
+  display: none;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  position: fixed;
+  background-color: rgba(53, 84, 141, 0.9);
+  box-shadow: 0 0 5px #ccc;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.popup button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 3px 10px;
+  color:#bbb;
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.5);
+  border: none;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  transition: background-color .2s;
+  -webkit-transition: background-color .2s;
+  -moz-transition: background-color .2s;
+  -ms-transition: background-color .2s;
+  -o-transition: background-color .2s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.popup button:hover{
+  color: crimson;
+}
+.popup img {
+  position: relative;
+  width: 80%;
+  height: 50%;
+  margin: 20px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+      }
+  to {
+    transform: scale(1);
+    }
+}
+</style>
+<body>
+    <div id="popup" class="popup">
+        <button onclick="close_ad()">&times;</button>
+        <img src="https://www.kongu.ac.in/admission/images/admission_2023.jpg" height="600"width="1000">
+      </div>
+    <img src="https://www.kongu.ac.in/images/header2021.png"alt="header"height="=300"width="1000">
+    <img src="https://www.kongu.ac.in/carousel/images/nirf2022.jpg"alt="image"height="=400"width="1500"><br>
+    <a href="file:///D:/web%20tech/library.html"target=blank_0>Library</a><br>
+    <a href="file:///D:/web%20tech/Research.html"target=blank_0>R&D</a><br>
+    <a href="file:///D:/web%20tech/placement.html"target=blank_0>Placement</a><br>
+    <a href=""target=blank_0>Contact</a><br>
+    <a href=""target=blank_0>Alumni</a><br>
+    <script src="script.js"></script>
+</body>
+</html>
